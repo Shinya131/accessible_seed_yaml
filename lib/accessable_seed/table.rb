@@ -2,11 +2,11 @@ module AccessableSeed
   class Table
     attr_reader :seed
     
-    def initialize(seed_string)
-      @seed = seed_string
+    def initialize(seed)
+      @seed = seed
     end
     
-    def split_by_record
+    def records
       setup_records if @records.nil?
       @records
     end

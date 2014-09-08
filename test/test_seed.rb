@@ -12,8 +12,8 @@ class TestSeed < MiniTest::Unit::TestCase
   end
   
   def test_records
-    assert_equal(TestData::SeedStringRecord01, @seed.split_by_record[0])
-    assert_equal(TestData::SeedStringRecord02, @seed.split_by_record[1])
-    assert_equal(TestData::SeedStringRecord03, @seed.split_by_record[2])
+    assert_equal(TestData::SeedStringRecord01, @seed.records[0])
+    assert_equal(TestData::SeedStringRecord02, @seed.records[1])
+    assert_equal(TestData::SeedStringRecord03, @seed.records[2])
   end
 end
