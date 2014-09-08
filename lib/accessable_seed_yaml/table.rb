@@ -46,7 +46,8 @@ module AccessableSeed
           break
         end
         
-        @records << fetch_first_record!(seed)
+        record = Record.new(fetch_first_record!(seed))
+        @records << record
       end
     end
     
