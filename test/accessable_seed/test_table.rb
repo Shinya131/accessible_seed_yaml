@@ -2,7 +2,7 @@ require 'test_helper'
 
 MiniTest::Unit.autorun
 
-class TestSeed < MiniTest::Unit::TestCase
+class TestTable < MiniTest::Unit::TestCase
   def setup
     @seed = AccessableSeed::Table.new(TestData::SeedString)
   end
