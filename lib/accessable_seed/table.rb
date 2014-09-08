@@ -37,7 +37,7 @@ module AccessableSeed
     end
     
     def record_boader_regexp
-      /\n[^ ]/
+      /\n[^ |\t]/
     end
   end
 end
