@@ -4,15 +4,15 @@ MiniTest::Unit.autorun
 
 class TestRecord < MiniTest::Unit::TestCase
   def setup
-    @record = AccessableSeed::Record.new(TestData::SeedStringRecord01)
+    @record = AccessableSeed::Record.new(TestData::Seed::Record01)
   end
   
   def test_initialize
-    assert_raises(ArgumentError){ AccessableSeed::Record.new(TestData::SeedString) }
+    assert_raises(ArgumentError){ AccessableSeed::Record.new(TestData::Seed::Table) }
   end
   
   def test_original_seed
-    assert_equal(TestData::SeedStringRecord01, @record.original_seed)
+    assert_equal(TestData::Seed::Record01, @record.original_seed)
   end
   
   def test_records
