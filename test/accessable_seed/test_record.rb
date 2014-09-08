@@ -7,6 +7,10 @@ class TestRecord < MiniTest::Unit::TestCase
     @record = AccessableSeed::Record.new(TestData::SeedStringRecord01)
   end
   
+  def test_initialize
+    assert_raises(ArgumentError){ AccessableSeed::Record.new(TestData::SeedString) }
+  end
+  
   def test_original_seed
     assert_equal(TestData::SeedStringRecord01, @record.original_seed)
   end
