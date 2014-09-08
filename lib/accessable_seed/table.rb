@@ -1,9 +1,9 @@
 module AccessableSeed
   class Table
-    attr_reader :seed
+    attr_reader :original_seed
     
     def initialize(seed)
-      @seed = seed
+      @original_seed = seed
     end
     
     def records
@@ -15,7 +15,7 @@ module AccessableSeed
     
     def setup_records
       @records = []
-      seed = @seed.dup
+      seed = @original_seed.dup
       
       loop do
         if seed.empty?

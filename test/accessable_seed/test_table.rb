@@ -7,8 +7,8 @@ class TestTable < MiniTest::Unit::TestCase
     @seed = AccessableSeed::Table.new(TestData::SeedString)
   end
   
-  def test_seed
-    assert_equal(TestData::SeedString, @seed.seed)
+  def test_original_seed
+    assert_equal(TestData::SeedString, @seed.original_seed)
   end
   
   def test_records
