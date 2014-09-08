@@ -1,3 +1,6 @@
+# This module has  seed wrapper classes.
+# Those class has some functions for data access,
+# And stored Original seed data by string.
 module AccessableSeed
   # This class is wrapper of seed.  
   #   Functions:
