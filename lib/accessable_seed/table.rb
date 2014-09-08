@@ -1,11 +1,32 @@
 module AccessableSeed
+  # This class is wrapper of seed.  
+  #   Functions:
+  #    - Fetch seed string by record unit.
+  #    - Stored original seed string. It can fetch anytime.
   class Table
     attr_reader :original_seed
     
+    # @param [String] seed for data source.
     def initialize(seed)
       @original_seed = seed
     end
     
+    # @return [Array of String] seed: split by record unit.
+    # @example
+    #
+    #  <source data>
+    #  data1:
+    #    id: 1
+    #    name: "one"
+    #  data2:
+    #    id: 2
+    #    name: "two"
+    #
+    #  <return>
+    #  [
+    #    'data1:\n  id: 1\n  name: "one"',
+    #    'data2:\n  id: 2\n  name: "two"',
+    #  ]
     def records
       setup_records if @records.nil?
       @records
