@@ -3,12 +3,13 @@
 
 # Introduction
 `AccessableSeed` is wrapper of rails seed file.  
-This wrapper provide next function.
-1. Convenience access to seed data:
- - It provide record unit access interface and attribute unit access interface.
-2. Store original seed string:
- - You can fetch original seed string anytime.
- - Does not happen notation shake.
+This wrapper provide next function.  
+
+- 1. Convenience access to seed data:  
+ - It provide record unit access interface and attribute unit access interface.  
+- 2. Store original seed string:  
+ - You can fetch original seed string anytime.  
+ - Does not happen notation shake.  
 
 # Example 
 ## Sample data
