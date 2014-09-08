@@ -16,8 +16,8 @@ module TestData
   
   SeedStringRecord02 = 
     "data2:\n" +
-    "\tid: 2\n" +
-    "\tname: \"tea\"\n"
+    "  id: 2\n" +
+    "  name: \"tea\"\n"
   
   SeedStringRecord03 = 
     "data3:\n" +
