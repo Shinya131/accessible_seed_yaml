@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.org/Shinya131/seed_picker.svg?branch=master)](https://travis-ci.org/Shinya131/seed_picker)
-[![Code Climate](https://codeclimate.com/github/Shinya131/seed_picker/badges/gpa.svg)](https://codeclimate.com/github/Shinya131/seed_picker)
+[![Build Status](https://travis-ci.org/Shinya131/accessable_seed_yaml.svg?branch=master)](https://travis-ci.org/Shinya131/accessable_seed_yaml)
+[![Coverage Status](https://coveralls.io/repos/Shinya131/accessable_seed_yaml/badge.png?branch=master)](https://coveralls.io/r/Shinya131/accessable_seed_yaml?branch=master)
+[![Code Climate](https://codeclimate.com/github/Shinya131/accessable_seed_yaml/badges/gpa.svg)](https://codeclimate.com/github/Shinya131/accessable_seed_yaml)
 
 # Introduction
 `AccessableSeed` is wrapper of rails seed file.  
