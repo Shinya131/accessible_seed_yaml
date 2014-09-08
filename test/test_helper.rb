@@ -1,3 +1,7 @@
+# coveralls
+require 'coveralls'
+Coveralls.wear!
+
 # minitest
 require 'minitest/unit'
 
