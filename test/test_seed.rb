@@ -4,7 +4,7 @@ MiniTest::Unit.autorun
 
 class TestSeed < MiniTest::Unit::TestCase
   def setup
-    @seed = Seed.new(TestData::SeedString)
+    @seed = AccessableSeed::Table.new(TestData::SeedString)
   end
   
   def test_seed
