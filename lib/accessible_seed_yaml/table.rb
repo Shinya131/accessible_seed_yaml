@@ -2,7 +2,7 @@
 # Those wrapper provides following function:
 # 1. Easy access interface for seed data.
 # 2. Hold original seed data.
-module AccessibleSeed
+module AccessibleSeedYaml
   # This class is wrapper of seed.  
   #   Functions:
   #    - Fetch seed data by record unit.
@@ -15,7 +15,7 @@ module AccessibleSeed
       @original_seed = seed
     end
     
-    # @return [Array of AccessibleSeed::Record] seed data. It split by record unit.
+    # @return [Array of AccessibleSeedYaml::Record] seed data. It split by record unit.
     # @example
     #
     #  <source data>
@@ -28,10 +28,10 @@ module AccessibleSeed
     #
     #  <return>
     #  [
-    #   #<AccessibleSeed::Record:0x007f91552770c0
+    #   #<AccessibleSeedYaml::Record:0x007f91552770c0
     #    @original_seed="data1:\n  id: 1\n  name: \"one\"\n",
     #    @seed_data_by_hash={"data1"=>{"id"=>1, "name"=>"one"}}>,
-    #   #<AccessibleSeed::Record:0x007f915526c238
+    #   #<AccessibleSeedYaml::Record:0x007f915526c238
     #    @original_seed="data2:\n  id: 2\n  name: \"two\"\n",
     #    @seed_data_by_hash={"data2"=>{"id"=>2, "name"=>"two"}}>,
     #  ]
