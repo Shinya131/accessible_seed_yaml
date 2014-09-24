@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/Shinya131/accessible_seed_yaml.svg?branch=master)](https://travis-ci.org/Shinya131/accessible_seed_yaml)
-[![Coverage Status](https://coveralls.io/repos/Shinya131/accessible_seed_yaml/badge.png?branch=master)](https://coveralls.io/r/Shinya131/accessible_seed_yaml?branch=master)
+[![Coverage Status](https://coveralls.io/repos/Shinya131/accessible_seed_yaml/badge.png?branch=develop)](https://coveralls.io/r/Shinya131/accessible_seed_yaml?branch=develop)
 [![Code Climate](https://codeclimate.com/github/Shinya131/accessible_seed_yaml/badges/gpa.svg)](https://codeclimate.com/github/Shinya131/accessible_seed_yaml)
 
 ## Introduction
