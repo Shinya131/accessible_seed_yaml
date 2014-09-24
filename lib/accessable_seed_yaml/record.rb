@@ -1,5 +1,5 @@
 require 'yaml'
-module AccessableSeed
+module AccessibleSeed
   # This class is wrapper of seed for one record.
   #   Functions:
   #    - Fetch seed attributes by hash.

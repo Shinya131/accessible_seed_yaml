@@ -4,11 +4,11 @@ MiniTest::Unit.autorun
 
 class TestRecord < MiniTest::Unit::TestCase
   def setup
-    @record = AccessableSeed::Record.new(TestData::Seed::Record01)
+    @record = AccessibleSeed::Record.new(TestData::Seed::Record01)
   end
   
   def test_initialize
-    assert_raises(ArgumentError){ AccessableSeed::Record.new(TestData::Seed::Table) }
+    assert_raises(ArgumentError){ AccessibleSeed::Record.new(TestData::Seed::Table) }
   end
   
   def test_original_seed
