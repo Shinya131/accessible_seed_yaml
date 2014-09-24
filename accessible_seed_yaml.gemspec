@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Shinya131"]
   spec.email         = ["nagai3mt5b@gmail.com"]
   spec.summary       = "AccessibleSeedYaml is wrapper of rails seed file."
-  spec.description   = "AccessibleSeedYaml is wrapper of rails seed file. This wrapper add convenience access interface to rails seed file. And stored original seed string."
+  spec.description   = "AccessibleSeedYaml is wrapper of rails seed file. This wrapper provides following function: 1. Easy access interface for seed data. 2. Hold original seed data."
   spec.homepage      = ""
   spec.license       = "MIT"
 
