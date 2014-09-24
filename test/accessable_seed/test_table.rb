@@ -12,8 +12,10 @@ class TestTable < MiniTest::Unit::TestCase
   end
   
   def test_records
-    assert_equal(TestData::Seed::Record01, @seed.records[0])
-    assert_equal(TestData::Seed::Record02, @seed.records[1])
-    assert_equal(TestData::Seed::Record03, @seed.records[2])
+    assert_instance_of(AccessableSeed::Record, @seed.records.first)
+    
+    assert_equal(TestData::Seed::Record01, @seed.records[0].original_seed)
+    assert_equal(TestData::Seed::Record02, @seed.records[1].original_seed)
+    assert_equal(TestData::Seed::Record03, @seed.records[2].original_seed)
   end
 end

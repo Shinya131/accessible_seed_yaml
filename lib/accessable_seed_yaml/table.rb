@@ -1,10 +1,11 @@
-# This module has  seed wrapper classes.
-# Those class has some functions for data access,
-# And stored Original seed data by string.
+# This module has seed wrapper classes.
+# Those wrapper provides following function:
+# 1. Easy access interface for seed data.
+# 2. Hold original seed data.
 module AccessableSeed
   # This class is wrapper of seed.  
   #   Functions:
-  #    - Fetch seed string by record unit.
+  #    - Fetch seed data by record unit.
   #    - Stored original seed string. It can fetch anytime.
   class Table
     attr_reader :original_seed
@@ -14,7 +15,7 @@ module AccessableSeed
       @original_seed = seed
     end
     
-    # @return [Array of String] seed: split by record unit.
+    # @return [Array of AccessableSeed::Record] seed data. It split by record unit.
     # @example
     #
     #  <source data>
@@ -27,8 +28,12 @@ module AccessableSeed
     #
     #  <return>
     #  [
-    #    'data1:\n  id: 1\n  name: "one"',
-    #    'data2:\n  id: 2\n  name: "two"',
+    #   #<AccessableSeed::Record:0x007f91552770c0
+    #    @original_seed="data1:\n  id: 1\n  name: \"one\"\n",
+    #    @seed_data_by_hash={"data1"=>{"id"=>1, "name"=>"one"}}>,
+    #   #<AccessableSeed::Record:0x007f915526c238
+    #    @original_seed="data2:\n  id: 2\n  name: \"two\"\n",
+    #    @seed_data_by_hash={"data2"=>{"id"=>2, "name"=>"two"}}>,
     #  ]
     def records
       setup_records if @records.nil?
@@ -46,7 +51,8 @@ module AccessableSeed
           break
         end
         
-        @records << fetch_first_record!(seed)
+        record = Record.new(fetch_first_record!(seed))
+        @records << record
       end
     end
     
