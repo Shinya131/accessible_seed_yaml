@@ -1,5 +1,5 @@
 require 'yaml'
-module AccessableSeed
+module AccessibleSeedYaml
   # This class is wrapper of seed for one record.
   #   Functions:
   #    - Fetch seed attributes by hash.
@@ -7,7 +7,7 @@ module AccessableSeed
   class Record
     attr_reader :original_seed
     
-    # @param [String] seed_for_one_record Seed for one record.
+    # @param [String] seed_for_one_record seed string for one record.
     # @raise [ArgumentError] if argument has not only one key then raise.
     # @example
     #  <Correct>
@@ -16,7 +16,7 @@ module AccessableSeed
     #    id: 1
     #    name: "one"
     #  ````
-    #   => this is seed of one record.
+    #   => this is one record.
     #
     #  <Wrong>
     #  ````
@@ -27,7 +27,7 @@ module AccessableSeed
     #    id: 2
     #    name: "two"
     #  ````
-    #   => this is seed of tow record.
+    #   => this is tow record.
     #
     def initialize(seed_for_one_record)
       @original_seed = seed_for_one_record
