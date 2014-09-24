@@ -1,15 +1,15 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'accessable_seed_yaml/version'
+require 'accessible_seed_yaml/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "accessable_seed_yaml"
-  spec.version       = AccessableSeedYaml::VERSION
+  spec.name          = "accessible_seed_yaml"
+  spec.version       = AccessibleSeedYaml::VERSION
   spec.authors       = ["Shinya131"]
   spec.email         = ["nagai3mt5b@gmail.com"]
-  spec.summary       = "AccessableSeed is wrapper of rails seed file."
-  spec.description   = "AccessableSeed is wrapper of rails seed file. This wrapper add convenience access interface to rails seed file. And stored original seed string."
+  spec.summary       = "AccessibleSeedYaml is wrapper of rails seed file."
+  spec.description   = "AccessibleSeedYaml is wrapper of rails seed file. This wrapper add convenience access interface to rails seed file. And stored original seed string."
   spec.homepage      = ""
   spec.license       = "MIT"
 

@@ -4,7 +4,7 @@ MiniTest::Unit.autorun
 
 class TestTable < MiniTest::Unit::TestCase
   def setup
-    @seed = AccessableSeed::Table.new(TestData::Seed::Table)
+    @seed = AccessibleSeedYaml::Table.new(TestData::Seed::Table)
   end
   
   def test_original_seed
@@ -12,7 +12,7 @@ class TestTable < MiniTest::Unit::TestCase
   end
   
   def test_records
-    assert_instance_of(AccessableSeed::Record, @seed.records.first)
+    assert_instance_of(AccessibleSeedYaml::Record, @seed.records.first)
     
     assert_equal(TestData::Seed::Record01, @seed.records[0].original_seed)
     assert_equal(TestData::Seed::Record02, @seed.records[1].original_seed)
