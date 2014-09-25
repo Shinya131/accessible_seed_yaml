@@ -10,6 +10,12 @@ This wrapper provides following function:
 1. Easy access interface for seed data.
 2. Hold original seed data.
 
+## Install
+
+To install the [gem][accessible_seed_yaml], run this command from a terminal/shell:
+
+    $ gem install accessible_seed_yaml
+
 ## Example 
 ### Sample data
 numbers.yaml
