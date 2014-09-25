@@ -12,7 +12,7 @@ This wrapper provides following function:
 
 ## Install
 
-To install the [gem][accessible_seed_yaml], run this command from a terminal/shell:
+To install the [Gem](https://rubygems.org/gems/accessible_seed_yaml), run this command from a terminal/shell:
 
     $ gem install accessible_seed_yaml
 
