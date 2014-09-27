@@ -47,6 +47,19 @@ module AccessibleSeedYaml
       @seed_data_by_hash.values.first
     end
     
+    # @return [String] record key
+    # @example
+    #  <source>
+    #  data1:
+    #    id: 1
+    #    name: "one"
+    #
+    #  <return>
+    #  "data1"
+    def key
+      @seed_data_by_hash.keys.first
+    end
+    
     private
     
     def exchange_to_hash
