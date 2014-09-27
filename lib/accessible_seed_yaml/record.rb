@@ -60,6 +60,17 @@ module AccessibleSeedYaml
       @seed_data_by_hash.keys.first
     end
     
+    # @return [String] this record data by yaml string
+    # @example
+    #  <source>
+    #  "data1:\n  id: 1\n  name: "one"
+    #
+    #  <return>
+    #  "data1:\n  id: 1\n  name: "one"
+    def to_s
+      self.original_seed
+    end
+    
     private
     
     def exchange_to_hash
