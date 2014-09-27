@@ -40,6 +40,11 @@ module AccessibleSeedYaml
       @records
     end
     
+    # @return [String] seed data by yaml string.
+    def to_s
+      self.original_seed
+    end
+    
     private
     
     def setup_records
