@@ -15,8 +15,16 @@ class TestRecord < MiniTest::Unit::TestCase
     assert_equal(TestData::Seed::Record01, @record.original_seed)
   end
   
-  def test_records
+  def test_to_s
+    assert_equal(@record.original_seed, @record.to_s)
+  end
+  
+  def test_attributes
     assert_equal(1,        @record.attributes["id"])
     assert_equal("coffee", @record.attributes["name"])
+  end
+  
+  def test_key
+    assert_equal("data1",  @record.key)
   end
 end

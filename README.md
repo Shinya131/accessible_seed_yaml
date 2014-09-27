@@ -1,3 +1,4 @@
+[![Gem Version](https://badge.fury.io/rb/accessible_seed_yaml.svg)](http://badge.fury.io/rb/accessible_seed_yaml)
 [![Build Status](https://travis-ci.org/Shinya131/accessible_seed_yaml.svg?branch=master)](https://travis-ci.org/Shinya131/accessible_seed_yaml)
 [![Coverage Status](https://coveralls.io/repos/Shinya131/accessible_seed_yaml/badge.png?branch=develop)](https://coveralls.io/r/Shinya131/accessible_seed_yaml?branch=develop)
 [![Code Climate](https://codeclimate.com/github/Shinya131/accessible_seed_yaml/badges/gpa.svg)](https://codeclimate.com/github/Shinya131/accessible_seed_yaml)
@@ -8,6 +9,12 @@ This wrapper provides following function:
 
 1. Easy access interface for seed data.
 2. Hold original seed data.
+
+## Install
+
+To install the [Gem](https://rubygems.org/gems/accessible_seed_yaml), run this command from a terminal/shell:
+
+    $ gem install accessible_seed_yaml
 
 ## Example 
 ### Sample data

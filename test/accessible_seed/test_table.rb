@@ -11,6 +11,10 @@ class TestTable < MiniTest::Unit::TestCase
     assert_equal(TestData::Seed::Table, @seed.original_seed)
   end
   
+  def test_to_s
+    assert_equal(@seed.original_seed, @seed.to_s)
+  end
+  
   def test_records
     assert_instance_of(AccessibleSeedYaml::Record, @seed.records.first)
     
