@@ -65,18 +65,18 @@ original_seed = File.read('numbers.yaml')
 ```
 ### Example of `AccessibleSeedYaml::Record`
 ```ruby
-@recoed = @table.records[0]
+@record = @table.records[0]
 
-@recoed
+@record
 # => #<AccessibleSeedYaml::Record:0x007f9155725068
 #     @original_seed="data1:\n  id: 1\n  name: \"one\"\n",
 #     @seed_data_by_hash={"data1"=>{"id"=>1, "name"=>"one"}}>
 
 # Instance is providing data access interface.
-@recoed.attributes          # => {"id"=>1, "name"=>"one"}
-@recoed.attributes["id"]    # => 1
-@recoed.attributes["name"]  # => "one"
+@record.attributes          # => {"id"=>1, "name"=>"one"}
+@record.attributes["id"]    # => 1
+@record.attributes["name"]  # => "one"
 
 # Instance is holding original seed.
-@recoed.original_seed # => "data1:\n  id: 1\n  name: \"one\"\n"
+@record.original_seed # => "data1:\n  id: 1\n  name: \"one\"\n"
 ```
