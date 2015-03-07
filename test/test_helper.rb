@@ -3,6 +3,7 @@ require 'coveralls'
 Coveralls.wear!
 
 # minitest
+require 'minitest/autorun'
 require 'minitest/unit'
 
 # require all lib files
